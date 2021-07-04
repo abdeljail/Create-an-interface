@@ -1,0 +1,103 @@
+.hr {
+  height: 4px !important;
+}
+
+.productCart:not(:last-child) {
+  margin-bottom: 10px;
+}
+.btnDisplay{
+    display: none;
+}
+/* .productCart.thisRemove {
+  height: 0px !important;
+  background-color: red;
+  opacity: 0;
+  padding: 0;
+  transform: scale(0, 0);
+  transition: all .5s ease-in-out;
+} */
+#Like .heading div i#iconLike {
+  color: #f99428;
+  font-size: 32px !important;
+  font-weight: bold !important;
+  animation: heart 4s infinite ease-in-out;
+}
+
+.product {
+  background-color: #f0f2f4;
+}
+.product .information {
+  padding-bottom: 20px;
+}
+
+.product .information > div:first-of-type {
+  width: 600px;
+}
+
+.product .information .quantity .quantity-btn:focus {
+  border-color: #f99428;
+}
+
+.product .information .quantity .quantity-btn.brn-not-click {
+  pointer-events: none;
+}
+
+.product .information .quantity .quantity-btn i {
+  font-size: 14px !important;
+  color: #f99428;
+}
+
+.product .image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border: 2px dashed #f99428;
+}
+
+.product .image img {
+  transform: scale(1.2, 1.2);
+}
+
+.product .cart-like .btn-pack,
+.product .information .quantity .quantity-btn {
+  border: 2.5px solid #dee2e6;
+  background-color: unset;
+}
+
+.product .cart-like .btn-pack i {
+  font-size: 20px !important;
+}
+
+.cart-like {
+  padding-top: 20px;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0.7, 0.7);
+  }
+
+  20% {
+    transform: scale(1.2, 1.2);
+    color: rgb(238, 99, 99);
+  }
+
+  40% {
+    transform: scale(1.2, 1.2) rotate(20deg);
+    color: rgb(241, 65, 65);
+  }
+
+  60% {
+    transform: scale(1.2, 1.2) rotate(-20deg);
+    color: rgb(241, 65, 65);
+  }
+
+  80% {
+    transform: scale(1.2, 1.2);
+    color: rgb(238, 99, 99);
+  }
+
+  100% {
+    transform: scale(0.7, 0.7);
+  }
+}
